@@ -5,24 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no"/>
     <title>Traffic Map</title>
+    <%= csrf_meta_tag() %>
   </head>
   <body>
     <main role="main" class="container <%= Enum.at(@conn.path_info, 0) %>">
       <%= render @view_module, @view_template, assigns %>
     </main>
-    <script>
-      import "phoenix_html"
-      import {Socket} from "phoenix"
-
-      let socket = new Socket("/socket", {params: {}})
-
-      socket.connect()
-
-      const channel = socket.channel('observations', {}); // connect to chat "room"
-
-      channel.connect()
-        .receive("ok", resp => { console.log("ok", resp) })
-        .receive("error", resp => { console.log("error", resp) })
+    <script type="text/javascript">
+       
     </script>
   </body>
 </html>
