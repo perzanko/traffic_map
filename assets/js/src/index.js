@@ -11,7 +11,7 @@ window.observationsSocket.connect()
 
 const channel = window.observationsSocket.channel('observations', {});
 
-channel.connect()
+channel.join()
   .receive("ok", resp => { console.log("ok", resp) })
   .receive("error", resp => { console.log("error", resp) })
 
