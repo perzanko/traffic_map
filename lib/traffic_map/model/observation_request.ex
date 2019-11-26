@@ -1,4 +1,5 @@
 defmodule TrafficMap.Observation.Request do
+  @derive Jason.Encoder
   defstruct [
     :method,
     :time,

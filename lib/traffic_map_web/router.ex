@@ -1,6 +1,5 @@
 defmodule TrafficMap.Web.Router do
   use TrafficMap.Web, :router
-  use Phoenix.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -12,6 +11,8 @@ defmodule TrafficMap.Web.Router do
   end
 
   scope "/", TrafficMap.Web do
+    pipe_through(:browser)
+
     get "/*path", PageController, :index
   end
 end

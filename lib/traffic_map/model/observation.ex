@@ -1,4 +1,5 @@
 defmodule TrafficMap.Observation do
+  @derive Jason.Encoder
   defstruct [:id, :request, :response, :issuer, :application, :created_at]
 
   def construct(conn) do

@@ -23,5 +23,10 @@ defmodule TrafficMap.Web.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
 
+  plug Plug.Session,
+       store: :cookie,
+       key: "__key",
+       signing_salt: "C0qf9XmQ"
+
   plug TrafficMap.Web.Router
 end
