@@ -7078,10 +7078,10 @@ phoenix@^1.4.11:
   resolved "https://registry.yarnpkg.com/phoenix/-/phoenix-1.4.11.tgz#3e70cd2461600ef3b0d4308e8fef7d2005fe000a"
   integrity sha512-UkuqKB/+Uy9LNt15v1PpPeoLizcYwF4cFTi1wiMZ2TVX5+2Pj7MbRDFmoUFPc+Z1jsOE/TdQ6kzZohErWMiYlQ==
 
-phoenix_html@^2.13.2:
-  version "2.13.2"
-  resolved "https://registry.yarnpkg.com/phoenix_html/-/phoenix_html-2.13.2.tgz#28a2376b713e9d8dda0aee8710f7c73732ff0157"
-  integrity sha512-tXrTduDqIisIn0nhZJURLqjaN5aq0nYAwh6wKGQKug6FHEsRmjxWMCVSrPyXo+2ldf7EQLUWdX1ZzlNtyXTsSQ==
+phoenix_html@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/phoenix_html/-/phoenix_html-3.0.4.tgz#96d498aa3e4889289d7035d5ed1c893ad5344048"
+  integrity sha512-P+FHH9eyp87Fjcrje/tOmGfdc3boPUhwAHeQytoNeM6rhacLefG3H2mo+cj85K5pTgyngc6FK1z2igqLviSGEg==
 
 pify@^2.0.0:
   version "2.3.0"
